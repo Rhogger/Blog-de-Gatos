@@ -18,6 +18,8 @@
   --search-bar-background: hsl(var(--hue-secondary-background), 0%, 100%, 20%);
   --app-background: hsl(var(--hue-secondary-background), 0%, 100%);
   --button-background: hsl(var(--hue-main-background), 91%, 25%);
+  --button-background-hover: hsla(var(--hue-main-background), 91%, 25%, 0.6);
+  --button-background-active: hsla(var(--hue-main-background), 91%, 25%, 0.8);
   --footer-background: hsl(var(--hue-main-background), 46%, 40%);
 
   --hue-main-font-color: 240;
@@ -157,6 +159,17 @@ main #post #buttons button {
   border-radius: 50%;
 
   background-color: var(--button-background);
+
+  cursor: pointer;
+}
+
+main #post #buttons button:hover {
+  background-color: var(--button-background-hover);
+}
+
+main #post #buttons button:active {
+  background-color: var(--button-background-active);
+
 }
 
 main #post #buttons button#unlike {
@@ -291,7 +304,7 @@ article {
   }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 1080px) {
   #container {
     display: flex;
     align-items: start;
