@@ -4,32 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <title>Blog de Gatos</title>
+
+  <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="app">
     <header>
-      <img src="assets/logo.svg" id="logo" alt="a paw">
+      <div class="container">
 
-      <form>
-        <div class="input-wrapper">
-          <label for="search">Pesquise por artigos</label>
-          <input type="text" placeholder="Pesquise por artigos">
-        </div>
-      </form>
+        <img src="assets/logo.svg" id="logo" alt="a paw">
 
-      <img src="https://randomuser.me/api/portraits/men/82.jpg" id="user-icon" alt="user icon">
+        <form>
+          <div class="input-wrapper">
+            <label for="search">Pesquise por artigos</label>
+            <input type="text" id="search" placeholder="Pesquise por artigos">
+          </div>
+        </form>
+
+        <img src="https://randomuser.me/api/portraits/men/82.jpg" id="user-icon" alt="user icon">
+      </div>
     </header>
 
-    <main>
-      <img src="assets/post.png" alt="A cat image">
+    <div id="container">
+      <main>
+        <img
+          src="https://images.unsplash.com/photo-1570458436416-b8fcccfe883f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="A black cat image" id="image-post">
 
-      <div class="container">
         <section id="post">
           <h1>Seriam os gatos astronautas?</h1>
 
-          <div class="buttons">
+          <div id="buttons">
             <button id="like">
               <img src="assets/like.svg" alt="Like icon">
             </button>
@@ -42,7 +57,8 @@
           <div id="text">
             <p>Os gatos são animais fascinantes e cercados de mistérios. De temperamento independente e misterioso,
               esses
-              felinos são conhecidos por sua agilidade, elegância e um comportamento muitas vezes imprevisível. Contudo,
+              felinos são conhecidos por sua agilidade, elegância e um comportamento muitas vezes imprevisível.
+              Contudo,
               recentemente, uma teoria tem ganhado espaço na internet e entre teóricos de conspiração: seriam os gatos
               astronautas?
             </p>
@@ -55,7 +71,8 @@
               poderia indicar que os gatos têm uma origem muito mais mística do que se pensava anteriormente.
             </p>
 
-            <p>Além disso, há teóricos que acreditam que os felinos possuem habilidades telepáticas e são capazes de se
+            <p>Além disso, há teóricos que acreditam que os felinos possuem habilidades telepáticas e são capazes de
+              se
               comunicar com outras espécies alienígenas. Essa crença baseia-se em relatos de pessoas que afirmam terem
               visto gatos reagindo a estímulos que não são perceptíveis aos seres humanos, ou até mesmo se comportando
               de
@@ -64,55 +81,54 @@
             </p>
           </div>
         </section>
+      </main>
 
-        <aside id="related-articles">
-          <h1>Artigos relacionados</h1>
+      <aside id="related-articles">
+        <h1>Artigos relacionados</h1>
 
-          <div id="articles">
-            <article>
-              <img src="https://cataas.com/cat/comfy" alt="Random cat image from API Cataas">
-              <div class="details">
-                <h2>Sábado preguiçoso</h2>
-                <p>Descubra atividades interessantes para fazer com seu pet durante os finais de semana.</p>
-              </div>
-            </article>
+        <div id="articles">
+          <article>
+            <img src="https://cataas.com/cat/comfy" alt="Random cat image from API Cataas">
+            <div class="details">
+              <h2>Sábado preguiçoso</h2>
+              <p>Descubra atividades interessantes para fazer com seu pet durante os finais de semana.</p>
+            </div>
+          </article>
 
-            <article>
-              <img src="https://cataas.com/cat" alt="">
-              <div class="details">
-                <h2>Balaio de gatos</h2>
-                <p>Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes.</p>
-              </div>
-            </article>
+          <article>
+            <img src="https://cataas.com/cat" alt="">
+            <div class="details">
+              <h2>Balaio de gatos</h2>
+              <p>Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes.</p>
+            </div>
+          </article>
 
-            <article>
-              <img src="https://cataas.com/cat/cute" alt="">
-              <div class="details">
-                <h2>Cartela de cores</h2>
-                <p>Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano.</p>
-              </div>
-            </article>
+          <article>
+            <img src="https://cataas.com/cat/cute" alt="">
+            <div class="details">
+              <h2>Cartela de cores</h2>
+              <p>Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano.</p>
+            </div>
+          </article>
 
-            <article>
-              <img src="https://cataas.com/cat/black" alt="">
-              <div class="details">
-                <h2>Os gatos sentem frio?</h2>
-                <p>Preparem-se para a frente fria que vem para o país da melhor maneira possível.</p>
-              </div>
-            </article>
+          <article>
+            <img src="https://cataas.com/cat/black" alt="">
+            <div class="details">
+              <h2>Os gatos sentem frio?</h2>
+              <p>Preparem-se para a frente fria que vem para o país da melhor maneira possível.</p>
+            </div>
+          </article>
 
-            <article>
-              <img src="https://cataas.com/cat/funny" alt="">
-              <div class="details">
-                <h2>Conheça o Moacir</h2>
-                <p>Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação.</p>
-              </div>
-            </article>
-
-          </div>
-        </aside>
-      </div>
-    </main>
+          <article>
+            <img src="https://cataas.com/cat/funny" alt="">
+            <div class="details">
+              <h2>Conheça o Moacir</h2>
+              <p>Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação.</p>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </div>
 
     <footer>
       <p>© 2023 - Rocketseat Explorer</p>
